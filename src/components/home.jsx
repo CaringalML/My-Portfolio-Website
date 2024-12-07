@@ -67,7 +67,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "AWS React Frontend Infrastructure",
-      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN, S3 storage, WAF protection, and automated SSL certificate management for a student enrollment system.",
+      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for both static and dynamic content delivery, S3 storage, WAF protection, and automated SSL certificate management for a Student Enrollment System.",
       image: "/img/architecture-4k.png",
       services: [
         "Route53",
