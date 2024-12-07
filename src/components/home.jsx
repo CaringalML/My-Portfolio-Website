@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X } from 'lucide-react';
 import { Card, CardContent } from "../components/ui/card";
 import '../styles/home.css';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   // State management
@@ -140,10 +141,22 @@ const Portfolio = () => {
       <nav className="nav-container">
         <div className="nav-content">
           <div className="nav-wrapper">
-            <div className="logo-container">
-              <Cloud className="logo-icon" />
-              <span className="logo-text">CaringalML</span>
-            </div>
+          <div className="logo-container">
+          <Cloud className="logo-icon" />
+          <Link 
+            to="/" 
+            className="logo-text"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setActiveSection('hero');
+              setTimeout(() => {
+                window.location.reload();
+              }, 800);
+            }}
+          >
+            CaringalML
+          </Link>
+        </div>
             
             <div className="desktop-menu">
               <a href="#hero" className={activeSection === 'hero' ? 'active' : ''}>
