@@ -268,7 +268,7 @@ const Portfolio = () => {
                     <img 
                       src={cert.image} 
                       alt={cert.title}
-                      className="certification-badge"
+                      className="certification-badge-logo"
                     />
                   ) : (
                     <cert.icon className="certification-icon" />
