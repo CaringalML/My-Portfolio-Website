@@ -111,6 +111,52 @@ const Portfolio = () => {
         "ECR",
         "RDS MySQL"
     ]
+    },
+
+
+    {
+      title: "Artisan Tiling React + Vite Cloudfront",
+      description: "A modern, responsive website for Artisan Tiling, a professional tiling company based in Hamilton, New Zealand. Built with React and Vite, deployed on AWS using Terraform for infrastructure management, with automated CI/CD through GitHub Actions.",
+      image: "/img/2-landing.png",
+      services: [
+        "Route53",
+        "CloudFront",
+        "WAF", 
+        "S3",
+        "ACM",
+        "IAM",
+    ],
+      github: "https://github.com/CaringalML/Artisan-Tiling-React-JS-Cloudfront",
+      architecture: [
+        "Route53 DNS",
+        "CloudFront CDN",
+        "WAF Protection", 
+        "Origin Access Control",
+        "S3 Storage",
+        "ACM Certificate"
+    ]
+    },
+
+    {
+      title: "Artisan Tiling Express JS Serverless Lambda",
+      description: "A serverless Node.js/Express API built for Artisan Tiling NZ, leveraging AWS Lambda with MongoDB integration. This API handles customer inquiries with comprehensive logging and monitoring capabilities, deployed using Terraform for infrastructure management.",
+      image: "/img/api-gateway-lambda.png",
+      services: [
+        "Route 53",
+        "API Gateway",
+        "Lambda",
+        "Cloudwatch", 
+        "ACM",
+        "IAM Role",
+    ],
+      github: "https://github.com/CaringalML/Artisan-Tiling-Express-JS-Serverless-Lambda",
+      architecture: [
+       "Route 53",
+        "API Gateway",
+        "Lambda",
+        "Cloudwatch", 
+        "MonggoDB",
+    ]
     }
   ];
 
