@@ -174,6 +174,15 @@ const Portfolio = () => {
     {
       title: "AWS Certified Solutions Architect Associate",
       issuer: "Amazon Web Services (AWS)",
+      date: "2025",
+      credentialId: "AWS04323279",
+      icon: Cloud,
+      image: "img/aws-certified-solutions-architect-associate.png",
+      link: "https://www.credly.com/badges/b98862af-ff93-442d-81e8-03258924ff4f/public_url"
+    },
+    {
+      title: "AWS Certified SysOps Administrator - Associate",
+      issuer: "Amazon Web Services (AWS)",
       status: "In Progress",
       expectedDate: "2025",
       icon: Cloud,
