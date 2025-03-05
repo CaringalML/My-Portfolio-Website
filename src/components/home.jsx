@@ -139,7 +139,7 @@ const Portfolio = () => {
 
     {
       title: "Artisan Tiling Node-JS Lambda DynamoDB Serverless",
-      description: "A serverless Node.js/Express API built for Artisan Tiling NZ, leveraging AWS Lambda with MongoDB integration. This API handles customer inquiries with comprehensive logging and monitoring capabilities, deployed using Terraform for infrastructure management.",
+      description: "A serverless Node.js/Express API built for Artisan Tiling NZ, leveraging AWS Lambda with DynamoDB integration. This API handles customer inquiries with comprehensive logging and monitoring capabilities, deployed using Terraform for infrastructure management.",
       image: "/img/diagrams.png",
       services: [
         "Route 53",
