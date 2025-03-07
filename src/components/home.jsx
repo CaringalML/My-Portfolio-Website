@@ -149,7 +149,7 @@ const Portfolio = () => {
         "ACM",
         "IAM Role",
     ],
-      github: "https://github.com/CaringalML/Artisan-Tiling-Node-JS-Lambda-DynamoDB-Serverless",
+      github: "https://github.com/CaringalML/Artisan-Tiling-Node-JS-Lambda-DynamoDB-Serverless/tree/CRUD",
       architecture: [
        "Route 53",
         "API Gateway",
