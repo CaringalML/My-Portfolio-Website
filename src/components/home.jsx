@@ -139,23 +139,22 @@ const Portfolio = () => {
 
     {
       title: "Artisan Tiling Node-JS Lambda DynamoDB Serverless",
-      description: "A serverless Node.js/Express API built for Artisan Tiling NZ, leveraging AWS API Gateway, Lambda with DynamoDB integration. This API handles Inventory Management System with comprehensive logging and monitoring capabilities, deployed using Terraform and Makefile for infrastructure management.",
+      description: "A serverless Node.js/Express RESTful API built for Artisan Tiling NZ, leveraging AWS API Gateway, Lambda with DynamoDB integration. This RESTful API handles Inventory Management System with comprehensive logging and monitoring capabilities, deployed using Terraform and Makefile for infrastructure management.",
       image: "/img/diagrams.png",
       services: [
         "Route 53",
         "API Gateway",
         "Lambda",
+        "DynamoDB", 
         "Cloudwatch", 
-        "ACM",
-        "IAM Role",
     ],
       github: "https://github.com/CaringalML/Artisan-Tiling-Node-JS-Lambda-DynamoDB-Serverless/tree/CRUD",
       architecture: [
        "Route 53",
         "API Gateway",
         "Lambda",
-        "Cloudwatch", 
         "DynamoDB",
+        "Cloudwatch"
     ]
     }
   ];
