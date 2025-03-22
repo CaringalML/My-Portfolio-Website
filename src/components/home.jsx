@@ -109,7 +109,7 @@ const Portfolio = () => {
         "VPC",
         "ECS Fargate",
         "ECR",
-        "RDS MySQL"
+        "RDS Aurora-MySQL"
     ]
     },
 
