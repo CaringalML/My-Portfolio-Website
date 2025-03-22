@@ -89,18 +89,18 @@ const Portfolio = () => {
        ]
     },
     {
-      title: "AWS Laravel RESTful API Backend Infrastructure",
-      description: "A highly available and scalable AWS infrastructure using Terraform that deploys a Laravel API application with ECS Fargate for containerization, RDS MySQL for database, ALB for load balancing, and Route 53 for DNS management, all secured within a VPC with public and private subnets across multiple availability zones.",
-      image: "/img/backend-infra.png",
+      title: "CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline",
+      description: "A highly available and scalable AWS infrastructure using Terraform that deploys a Backend Web API application with ECS Fargate for containerization, RDS Aurora MySQL for database, ALB for load balancing, and Route 53 for DNS management, all secured within a VPC with public and private subnets across multiple availability zones.",
+      image: "/img/ECS-Fargate.png",
       services: [
         "ECS with Fargate",
         "ECR",
-        "RDS - MySQL",
+        "RDS - Aurora MySQL",
         "VPC",
         "ALB",
         "Route 53", 
-        "CloudWatch",
-        "Secrets Manager"
+        "CloudWatch"
+        
     ],
       github: "https://github.com/CaringalML/AWS-Laravel-RESTful-API-Backend-Infrastructure",
       architecture: [
