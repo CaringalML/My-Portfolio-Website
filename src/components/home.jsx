@@ -67,8 +67,8 @@ const Portfolio = () => {
   // Projects data without route information
   const projects = [
     {
-      title: "AWS React Frontend Infrastructure",
-      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for both static and dynamic content delivery, S3 storage, WAF protection, and automated SSL certificate management for a Student Enrollment System.",
+      title: "CloudStruct: Frontend A Scalable Approach with CloudFront, S3, AI Powered Rekognition",
+      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for both static and dynamic content delivery, S3 storage, WAF protection, automated SSL certificate management and AI powered image analysis by Amazon Rekognition,  for a Student Enrollment System.",
       image: "/img/rekognition.png",
       services: [
         "Route53",
@@ -79,7 +79,7 @@ const Portfolio = () => {
         "IAM",
         "Amazon Rekognition"
       ],
-      github: "https://github.com/CaringalML/AWS-React-Frontend-Infrastructure",
+      github: "https://github.com/CaringalML/CloudStruct-Frontend-A-Scalable-Approach-with-CloudFront-S3-AI-Powered-Rekognition.git",
       architecture: [
         "Route53 DNS",
         "CloudFront CDN",
