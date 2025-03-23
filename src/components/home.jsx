@@ -89,11 +89,11 @@ const Portfolio = () => {
        ]
     },
     {
-      title: "CloudStruct: Enterprise Serverless Architecture with AWS Fargate Lambda Aurora and with Github Actions CI/CD Pipeline",
-      description: "Production-grade AWS serverless architecture demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and CI/CD pipeline integration. Showcases expertise in cloud architecture patterns, infrastructure security, and AWS best practices that would typically require an entire DevOps team.",
+      title: "CloudStruct: Serverless Backend Infrastructure with AWS Fargate, Lambda, Aurora and CI/CD",
+      description: "Production-grade serverless backend infrastructure demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and GitHub Actions CI/CD pipeline.",
       image: "/img/AWS-ECS-Fargate.png",
       services: [
-       "ECS with Fargate",
+        "ECS with Fargate",
         "ECR",
         "Aurora MySQL Serverless",
         "Lambda",
@@ -105,15 +105,17 @@ const Portfolio = () => {
         "IAM",
         "ACM",
         "S3 Gateway Endpoint"
-        
-    ],
+      ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
       architecture: [
-        "Route 53", 
-        "ALB",
-        "ECS Fargate",
-        "RDS Aurora-MySQL"
-    ]
+        "Backend Tier: ECS Fargate & Fargate Spot",
+        "Database Tier: Aurora MySQL Serverless",
+        "Automation Tier: Lambda & EventBridge",
+        "Networking Tier: VPC with Multi-AZ, ALB, Route 53",
+        "Security Tier: IAM, ACM, Security Groups",
+        "DevOps Tier: GitHub Actions CI/CD, Terraform IaC"
+      ],
+      tier: "Backend Infrastructure"
     },
 
 
