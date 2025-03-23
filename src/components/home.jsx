@@ -108,14 +108,12 @@ const Portfolio = () => {
         
     ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
-    //   architecture: [
-    //     "Route 53", 
-    //     "ALB",
-    //     "VPC",
-    //     "ECS Fargate",
-    //     "ECR",
-    //     "RDS Aurora-MySQL"
-    // ]
+      architecture: [
+        "Route 53", 
+        "ALB",
+        "ECS Fargate",
+        "RDS Aurora-MySQL"
+    ]
     },
 
 
