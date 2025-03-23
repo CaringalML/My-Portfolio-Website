@@ -89,28 +89,37 @@ const Portfolio = () => {
        ]
     },
     {
-      title: "CloudStruct Enterprise Serverless Architecture with AWS Fargate Lambda Aurora and with Github Actions CI/CD Pipeline",
-      description: "A highly available and scalable AWS infrastructure using Terraform that deploys a Backend Web API application with ECS Fargate for containerization, RDS Aurora-MySQL Serverless V2 for database, ALB for load balancing, and Route 53 for DNS management, all secured within a VPC with public and private subnets across multiple availability zones.",
+      title: "CloudStruct Enterprise Serverless Architecture with AWS Fargate Lambda Aurora and CI/CD Pipeline",
+      description: "Production-grade AWS serverless architecture demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and CI/CD pipeline integration. Showcases expertise in cloud architecture patterns, infrastructure security, and AWS best practices that would typically require an entire DevOps team.",
       image: "/img/AWS-ECS-Fargate.png",
       services: [
         "ECS with Fargate",
         "ECR",
-        "RDS - Aurora MySQL",
+        "Aurora MySQL Serverless",
+        "Lambda",
+        "EventBridge",
         "VPC",
         "ALB",
         "Route 53", 
-        "CloudWatch"
-        
-    ],
+        "CloudWatch",
+        "IAM",
+        "ACM",
+        "S3 Gateway Endpoint"
+      ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
       architecture: [
         "Route 53", 
+        "ACM",
         "ALB",
-        "VPC",
-        "ECS Fargate",
+        "VPC with Multi-AZ",
+        "ECS Fargate & Fargate Spot",
+        "Auto Scaling",
         "ECR",
-        "RDS Aurora-MySQL"
-    ]
+        "Aurora MySQL Serverless",
+        "Lambda",
+        "EventBridge",
+        "GitHub Actions CI/CD"
+      ]
     },
 
 
