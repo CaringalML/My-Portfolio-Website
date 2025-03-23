@@ -69,7 +69,7 @@ const Portfolio = () => {
     {
       title: "AWS React Frontend Infrastructure",
       description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for both static and dynamic content delivery, S3 storage, WAF protection, and automated SSL certificate management for a Student Enrollment System.",
-      image: "/img/architecture-4k.png",
+      image: "/img/rekognition.png",
       services: [
         "Route53",
         "CloudFront",
@@ -77,6 +77,7 @@ const Portfolio = () => {
         "S3",
         "ACM",
         "IAM",
+        "Amazon Rekognition"
       ],
       github: "https://github.com/CaringalML/AWS-React-Frontend-Infrastructure",
       architecture: [
