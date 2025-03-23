@@ -89,7 +89,7 @@ const Portfolio = () => {
        ]
     },
     {
-      title: "CloudStruct: Serverless Backend Infrastructure with AWS Fargate, Lambda, Aurora and CI/CD",
+      title: "CloudStruct: Serverless Backend with AWS Fargate, Aurora, and Event-Driven Lambda CI/CD Automation",
       description: "Production-grade serverless backend infrastructure demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and GitHub Actions CI/CD pipeline.",
       image: "/img/AWS-ECS-Fargate.png",
       services: [
