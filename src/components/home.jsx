@@ -108,12 +108,11 @@ const Portfolio = () => {
       ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
       architecture: [
-        "Backend Tier: ECS Fargate & Fargate Spot",
-        "Database Tier: Aurora MySQL Serverless",
-        "Automation Tier: Lambda & EventBridge",
-        "Networking Tier: VPC with Multi-AZ, ALB, Route 53",
-        "Security Tier: IAM, ACM, Security Groups",
-        "DevOps Tier: GitHub Actions CI/CD, Terraform IaC"
+       "Route 53",
+       "Application Load Balancer",
+       "Elastic Container Service(Fargate)",
+       "RDS Aurora MySQL Serverless",
+       "CloudWatch",
       ],
       tier: "Backend Infrastructure"
     },
