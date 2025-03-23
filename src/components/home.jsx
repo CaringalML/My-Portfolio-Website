@@ -68,7 +68,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "CloudStruct Frontend: A Scalable Approach with CloudFront, S3, AI Powered Rekognition",
-      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for both static and dynamic content delivery, S3 storage, WAF protection, automated SSL certificate management and AI powered image analysis by Amazon Rekognition,  for a Student Enrollment System.",
+      description: "A secure and scalable AWS infrastructure using Terraform, featuring CloudFront CDN for delivering both static and dynamic content, S3 for storage, WAF for protection, automated SSL certificate management, and AI-powered image analysis with Amazon Rekognition—all designed for a Student Enrollment System.",
       image: "/img/rekognition.png",
       services: [
         "Route53",
