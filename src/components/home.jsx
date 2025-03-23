@@ -93,13 +93,18 @@ const Portfolio = () => {
       description: "Production-grade AWS serverless architecture demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and CI/CD pipeline integration. Showcases expertise in cloud architecture patterns, infrastructure security, and AWS best practices that would typically require an entire DevOps team.",
       image: "/img/AWS-ECS-Fargate.png",
       services: [
-        "ECS with Fargate",
+       "ECS with Fargate",
         "ECR",
-        "RDS - Aurora MySQL",
+        "Aurora MySQL Serverless",
+        "Lambda",
+        "EventBridge",
         "VPC",
         "ALB",
         "Route 53", 
-        "CloudWatch"
+        "CloudWatch",
+        "IAM",
+        "ACM",
+        "S3 Gateway Endpoint"
         
     ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
