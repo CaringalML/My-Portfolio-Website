@@ -106,7 +106,7 @@ const Portfolio = () => {
         "ACM",
         "S3 Gateway Endpoint"
       ],
-      github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
+      github: "https://github.com/CaringalML/CloudStruct-Serverless-Backend-with-AWS-Fargate-Aurora-and-Event-Driven-Lambda-CI-CD-Automation.git",
       architecture: [
        "Route 53",
        "Application Load Balancer",
