@@ -107,19 +107,6 @@ const Portfolio = () => {
         "S3 Gateway Endpoint"
       ],
       github: "https://github.com/CaringalML/CloudStruct-Enterprise-Serverless-Architecture-with-AWS-Fargate-Lambda-Aurora-and-CI-CD-Pipeline.git",
-      architecture: [
-        "Route 53", 
-        "ACM",
-        "ALB",
-        "VPC with Multi-AZ",
-        "ECS Fargate & Fargate Spot",
-        "Auto Scaling",
-        "ECR",
-        "Aurora MySQL Serverless",
-        "Lambda",
-        "EventBridge",
-        "GitHub Actions CI/CD"
-      ]
     },
 
 
