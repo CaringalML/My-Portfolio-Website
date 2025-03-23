@@ -89,7 +89,7 @@ const Portfolio = () => {
        ]
     },
     {
-      title: "CloudStruct Enterprise Serverless Architecture with AWS Fargate Lambda Aurora and with Github Actions CI/CD Pipeline",
+      title: "CloudStruct: Enterprise Serverless Architecture with AWS Fargate Lambda Aurora and with Github Actions CI/CD Pipeline",
       description: "Production-grade AWS serverless architecture demonstrating advanced DevOps expertise. Implements enterprise-level high availability, fault tolerance, and cost optimization through a sophisticated multi-AZ design with ECS Fargate, Aurora Serverless, and Lambda. Features comprehensive automation with EventBridge-triggered deployments, infrastructure as code with Terraform, and CI/CD pipeline integration. Showcases expertise in cloud architecture patterns, infrastructure security, and AWS best practices that would typically require an entire DevOps team.",
       image: "/img/AWS-ECS-Fargate.png",
       services: [
