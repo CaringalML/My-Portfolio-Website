@@ -121,7 +121,7 @@ const Portfolio = () => {
     {
       title: "Artisan Tiling React + Vite Cloudfront",
       description: "A modern, responsive website for Artisan Tiling, a professional tiling company based in Hamilton, New Zealand. Built with React and Vite, deployed on AWS using Terraform for infrastructure management, with automated CI/CD through GitHub Actions.",
-      image: "/img/frontend-artisan.png",
+      image: "/img/frontend-artisans.png",
       services: [
         "Route53",
         "CloudFront",
