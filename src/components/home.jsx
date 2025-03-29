@@ -52,7 +52,7 @@ const Portfolio = () => {
     },
     {
       "title": "CI/CD Pipeline",
-      "icon": "Code",
+      "icon": Code,
       "description": "Implementing automated deployment pipelines with GitHub Actions, AWS Elastic Beanstalk, and AWS CodePipeline",
       "color": "from-blue-400 to-blue-600"
     },
