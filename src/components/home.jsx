@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X } from 'lucide-react';
+import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network } from 'lucide-react';
 import { Card, CardContent } from "../components/ui/card";
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
@@ -58,7 +58,7 @@ const Portfolio = () => {
     },
     {
       title: "Cloud Architecture",
-      icon: Database,
+      icon: Network,
       description: "Designing resilient and cost-effective AWS solutions",
       color: "from-purple-400 to-purple-600"
     }
