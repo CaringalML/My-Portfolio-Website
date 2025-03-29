@@ -47,7 +47,7 @@ const Portfolio = () => {
     {
       title: "Infrastructure as Code",
       icon: FileCode,
-      description: "Building scalable cloud infrastructure using Terraform and AWS CloudFormation",
+      description: "Building scalable cloud infrastructure using Terraform",
       color: "from-orange-400 to-orange-600"
     },
     {
