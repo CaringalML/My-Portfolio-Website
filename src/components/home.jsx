@@ -176,7 +176,7 @@ const Portfolio = () => {
       link: "https://www.credly.com/badges/b08c2526-a7ed-429c-bcc1-bfaa0fca90f3/public_url"
     },
     {
-      title: "AWS Certified Solutions Architect Associate",
+      title: "AWS Certified Solutions Architect - Associate",
       issuer: "Amazon Web Services (AWS)",
       date: "2025",
       credentialId: "AWS04323279",
@@ -281,7 +281,7 @@ const Portfolio = () => {
             <div>
               <div className="certification-badge">
                 <Award className="w-4 h-4" />
-                AWS Certified Cloud Practitioner
+                AWS Certified Solutions Architect - Associate
               </div>
               <h1 className="hero-title">
                 Martin Lawrence M. Caringal
