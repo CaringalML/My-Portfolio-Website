@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network } from 'lucide-react';
+import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network, FileCode, GitBranch } from 'lucide-react';
 import { Card, CardContent } from "../components/ui/card";
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
@@ -46,13 +46,13 @@ const Portfolio = () => {
   const services = [
     {
       title: "Infrastructure as Code",
-      icon: Cloud,
+      icon: FileCode,
       description: "Building scalable cloud infrastructure using Terraform and AWS CloudFormation",
       color: "from-orange-400 to-orange-600"
     },
     {
       "title": "CI/CD Pipeline",
-      "icon": Code,
+      "icon": GitBranch,
       "description": "Implementing automated deployment pipelines with GitHub Actions, AWS Elastic Beanstalk, and AWS CodePipeline",
       "color": "from-blue-400 to-blue-600"
     },
