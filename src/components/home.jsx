@@ -51,10 +51,10 @@ const Portfolio = () => {
       color: "from-orange-400 to-orange-600"
     },
     {
-      title: "CI/CD Pipeline",
-      icon: Code,
-      description: "Implementing automated deployment pipelines with GitHub Actions",
-      color: "from-blue-400 to-blue-600"
+      "title": "CI/CD Pipeline",
+      "icon": "Code",
+      "description": "Implementing automated deployment pipelines with GitHub Actions, AWS Elastic Beanstalk, and AWS CodePipeline",
+      "color": "from-blue-400 to-blue-600"
     },
     {
       title: "Cloud Architecture",
