@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network, FileCode, GitBranch } from 'lucide-react';
+import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network, FileCode, GitBranch, ZoomIn } from 'lucide-react';
 import { Card, CardContent } from "../components/ui/card";
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,37 @@ const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  
+  // New state for the image modal
+  const [modalImage, setModalImage] = useState(null);
+
+  // Function to open modal with an image
+  const openImageModal = (imageUrl) => {
+    setModalImage(imageUrl);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Function to close the modal
+  const closeImageModal = () => {
+    setModalImage(null);
+    // Restore scrolling
+    document.body.style.overflow = 'auto';
+  };
+
+  // Handle ESC key press to close the modal
+  useEffect(() => {
+    const handleEscKey = (e) => {
+      if (e.key === 'Escape' && modalImage) {
+        closeImageModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleEscKey);
+    return () => {
+      window.removeEventListener('keydown', handleEscKey);
+    };
+  }, [modalImage]);
 
   // Scroll handling effect
   useEffect(() => {
@@ -372,66 +403,89 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Projects Section */}
-      <div id="projects" className="projects-section">
-        <div className="section-content">
-          <h2 className="section-title">Featured Cloud Projects</h2>
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <div 
-                key={index} 
-                className="project-card"
-              >
-                <img 
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  
-                  <div className="project-services">
-                    <h4 className="services-title">AWS Services</h4>
-                    <div className="services-tags">
-                      {project.services.map((service, serviceIndex) => (
-                        <span key={serviceIndex} className="service-tag">
-                          {service}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
 
-                  <div className="project-architecture">
-                    <h4 className="architecture-title">Architecture</h4>
-                    <div className="architecture-flow">
-                      {project.architecture.map((service, archIndex) => (
-                        <React.Fragment key={archIndex}>
-                          <span>{service}</span>
-                          {archIndex < project.architecture.length - 1 && (
-                            <ChevronRight className="architecture-arrow" />
-                          )}
-                        </React.Fragment>
-                      ))}
-                    </div>
-                  </div>
-
-                  <a 
-                    href={project.github} 
-                    className="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="w-5 h-5" />
-                    View Source Code
-                    <ChevronRight className="w-4 h-4" />
-                  </a>
-                </div>
+{/* Projects Section */}
+<div id="projects" className="projects-section">
+  <div className="section-content">
+    <h2 className="section-title">Featured Cloud Projects</h2>
+    <div className="projects-grid">
+      {projects.map((project, index) => (
+        <div 
+          key={index} 
+          className="project-card"
+        >
+          <div 
+            className="project-image-container"
+            onClick={() => openImageModal(project.image)}
+          >
+            <img 
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+            <div className="image-overlay">
+              <ZoomIn className="zoom-icon" />
+            </div>
+          </div>
+          <div className="project-content">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            
+            <div className="project-services">
+              <h4 className="services-title">AWS Services</h4>
+              <div className="services-tags">
+                {project.services.map((service, serviceIndex) => (
+                  <span key={serviceIndex} className="service-tag">
+                    {service}
+                  </span>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <a 
+              href={project.github} 
+              className="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="w-5 h-5" />
+              View Source Code
+              <ChevronRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+      {/* Image Modal (Google Drive Style) */}
+      {modalImage && (
+        <div className="gdrive-modal-overlay" onClick={closeImageModal}>
+          <div className="gdrive-modal-header">
+            <div className="gdrive-modal-title">
+              {projects.find(p => p.image === modalImage)?.title || 'Project Image'}
+            </div>
+            <button className="gdrive-close-button" onClick={closeImageModal}>
+              <X className="close-icon" />
+            </button>
+          </div>
+          
+          <div className="gdrive-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={modalImage} 
+              alt="Enlarged project" 
+              className="gdrive-modal-image" 
+            />
+          </div>
+          
+          <div className="gdrive-modal-footer">
+            <div className="gdrive-image-counter">
+              {projects.findIndex(p => p.image === modalImage) + 1} of {projects.length}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Contact Section */}
       <div id="contact" className="contact-section">

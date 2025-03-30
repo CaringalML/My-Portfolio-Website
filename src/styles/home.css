@@ -914,3 +914,181 @@
 .logo-text:hover {
   opacity: 0.8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project image container and hover effects */
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  cursor: zoom-in;
+  /* Make sure the container is clickable */
+  z-index: 1;
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* Ensure image doesn't interfere with clicks */
+  pointer-events: none;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.zoom-icon {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Google Drive style modal */
+.gdrive-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Modal header */
+.gdrive-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: rgba(32, 33, 36, 0.9);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gdrive-modal-title {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}
+
+.gdrive-close-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.gdrive-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Modal content */
+.gdrive-modal-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+}
+
+.gdrive-modal-image {
+  max-width: 100%;
+  max-height: calc(100vh - 120px);
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal footer */
+.gdrive-modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: white;
+  background-color: rgba(32, 33, 36, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gdrive-image-counter {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Animation */
+.gdrive-modal-overlay {
+  animation: gdriveModalFadeIn 0.2s ease;
+}
+
+@keyframes gdriveModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gdrive-modal-content {
+    padding: 0 16px;
+  }
+  
+  .gdrive-modal-title {
+    max-width: 60%;
+    font-size: 14px;
+  }
+}
