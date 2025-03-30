@@ -315,7 +315,7 @@ const Portfolio = () => {
                 AWS Certified Solutions Architect - Associate
               </div>
               <h1 className="hero-title">
-                Martin Lawrence M. Caringal
+                Martin Lawrence Caringal
                 <span className="hero-subtitle">
                   DevOps Engineer
                 </span>
