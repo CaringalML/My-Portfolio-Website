@@ -150,32 +150,32 @@ const Portfolio = () => {
     },
 
 
-    {
-      title: "Artisan Tiling React + Vite Cloudfront",
-      description: "A modern, responsive website for Artisan Tiling, a professional tiling company based in Hamilton, New Zealand. Built with React and Vite, deployed on AWS using Terraform for infrastructure management, with automated CI/CD through GitHub Actions.",
-      image: "/img/frontend-artisan-tilings.png",
-      services: [
-        "Route53",
-        "CloudFront",
-        "WAF", 
-        "S3",
-        "ACM",
-        "IAM",
-    ],
-      github: "https://github.com/CaringalML/Artisan-Tiling-React-JS-Cloudfront",
-      architecture: [
-        "Route53 DNS",
-        "CloudFront CDN",
-        "WAF Protection", 
-        "Origin Access Control",
-        "S3 Storage",
-        "ACM Certificate"
-    ]
-    },
+    // {
+    //   title: "Artisan Tiling React + Vite Cloudfront",
+    //   description: "A modern, responsive website for Artisan Tiling, a professional tiling company based in Hamilton, New Zealand. Built with React and Vite, deployed on AWS using Terraform for infrastructure management, with automated CI/CD through GitHub Actions.",
+    //   image: "/img/frontend-artisan-tilings.png",
+    //   services: [
+    //     "Route53",
+    //     "CloudFront",
+    //     "WAF", 
+    //     "S3",
+    //     "ACM",
+    //     "IAM",
+    // ],
+    //   github: "https://github.com/CaringalML/Artisan-Tiling-React-JS-Cloudfront",
+    //   architecture: [
+    //     "Route53 DNS",
+    //     "CloudFront CDN",
+    //     "WAF Protection", 
+    //     "Origin Access Control",
+    //     "S3 Storage",
+    //     "ACM Certificate"
+    // ]
+    // },
 
     {
-      title: "Artisan Tiling Node-JS Lambda DynamoDB Serverless",
-      description: "A serverless Node.js/Express RESTful API built for Artisan Tiling NZ, leveraging AWS API Gateway, Lambda with DynamoDB integration. This RESTful API handles Inventory Management System with comprehensive logging and monitoring capabilities, deployed using Terraform and Makefile for infrastructure management.",
+      title: "Node-JS Lambda DynamoDB Serverless",
+      description: "A serverless Node.js/Express RESTful API, leveraging AWS API Gateway, Lambda with DynamoDB integration. This RESTful API handles Inventory Management System with comprehensive logging and monitoring capabilities, deployed using Terraform and Makefile for infrastructure management.",
       image: "/img/api-gateway-lambda-dynamodb-serverless.png",
       services: [
         "Route 53",
@@ -184,7 +184,7 @@ const Portfolio = () => {
         "DynamoDB", 
         "Cloudwatch", 
     ],
-      github: "https://github.com/CaringalML/Artisan-Tiling-Node-JS-Lambda-DynamoDB-Serverless/tree/CRUD",
+      github: "https://github.com/CaringalML/Node-JS-Lambda-DynamoDB-Serverless.git",
       architecture: [
        "Route 53",
         "API Gateway",
