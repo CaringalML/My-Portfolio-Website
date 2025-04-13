@@ -1,25 +1,53 @@
 {
   "short_name": "CaringalML",
-  "name": "Martin Lawrence M. Caringal",
+  "name": "Martin Lawrence M. Caringal | DevOps Engineer",
+  "description": "DevOps Engineer specializing in cloud infrastructure automation and modern DevOps practices with AWS solutions",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "martin-barong.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "martin-barong.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
-      "src": "logo512.png",
+      "src": "martin-barong.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-icon.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "categories": ["portfolio", "professional", "devops", "technology"],
+  "shortcuts": [
+    {
+      "name": "Portfolio",
+      "url": "/portfolio",
+      "description": "View my project portfolio"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Get in touch with me"
+    }
+  ],
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "lang": "en",
+  "related_applications": []
 }
