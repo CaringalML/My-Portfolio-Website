@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/martin-barong.JPG" />
+    <link rel="icon" href="%PUBLIC_URL%/martin-barong.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Martin Lawrence M. Caringal - DevOps Engineer specializing in cloud infrastructure automation and modern DevOps practices with AWS solutions" />
@@ -14,13 +14,13 @@
     <meta property="og:description" content="DevOps Engineer specializing in cloud infrastructure automation and modern DevOps practices with AWS solutions" />
     <meta property="og:url" content="https://martincaringal.co.nz" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="%PUBLIC_URL%/martin-barong.JPG" />
+    <meta property="og:image" content="%PUBLIC_URL%/martin-barong.jpg" />
     
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Martin Lawrence M. Caringal | DevOps Engineer" />
     <meta name="twitter:description" content="DevOps Engineer specializing in cloud infrastructure automation and modern DevOps practices with AWS solutions" />
-    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.JPG" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/martin-barong.jpg" />
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -65,7 +65,8 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
       // Only add analytics in production
-      if ('%NODE_ENV%' === 'production') {
+      if (window.location.hostname !== 'localhost' && 
+          window.location.hostname !== '127.0.0.1') {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
