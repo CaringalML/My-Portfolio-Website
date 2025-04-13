@@ -9,14 +9,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "martin-barong.jpg",
-      "type": "image/jpeg",
+      "src": "martin-barong.png",
+      "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "martin-barong.jpg",
-      "type": "image/jpeg",
+      "src": "martin-barong.png",
+      "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
