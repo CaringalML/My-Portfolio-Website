@@ -337,7 +337,7 @@ const Portfolio = () => {
             <div className="hero-image-container">
               <div className="hero-image-gradient"></div>
               <img 
-                src="img/martin.JPG"
+                src="img/anime-me.jpg"
                 alt="Profile"
                 className="hero-image"
               />
