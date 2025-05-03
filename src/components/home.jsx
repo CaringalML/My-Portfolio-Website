@@ -108,6 +108,7 @@ const Portfolio = () => {
         "S3",
         "ACM",
         "IAM",
+        "Cloudwatch", 
         "Amazon Rekognition"
       ],
       github: "https://github.com/CaringalML/CloudStruct-Frontend-A-Scalable-Approach-with-CloudFront-S3-AI-Powered-Rekognition.git",
@@ -172,6 +173,30 @@ const Portfolio = () => {
     //     "ACM Certificate"
     // ]
     // },
+
+
+    {
+      title: "CloudStruct-A-Frontend-Infrastructure-with-AWS-CloudFront-and-S3",
+      description: "A complete serverless infrastructure solution for hosting frontend static web applications using AWS CloudFront and S3.",
+      image: "/img/aws-architecture-diagram.png",
+      services: [
+        "Route53",
+        "CloudFront",
+        "WAF", 
+        "S3",
+        "ACM",
+        "Cloudwatch", 
+    ],
+      github: "https://github.com/CaringalML/Node-JS-Lambda-DynamoDB-Serverless.git",
+      architecture: [
+       "Route 53",
+        "API Gateway",
+        "Lambda",
+        "DynamoDB",
+        "Cloudwatch"
+    ]
+    },
+    
 
     {
       title: "Node-JS Lambda DynamoDB Serverless",
