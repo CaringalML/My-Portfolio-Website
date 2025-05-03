@@ -187,13 +187,14 @@ const Portfolio = () => {
         "ACM",
         "Cloudwatch", 
     ],
-      github: "https://github.com/CaringalML/Node-JS-Lambda-DynamoDB-Serverless.git",
+      github: "https://github.com/CaringalML/CloudStruct-A-Frontend-Infrastructure-with-AWS-CloudFront-and-S3.git",
       architecture: [
-       "Route 53",
-        "API Gateway",
-        "Lambda",
-        "DynamoDB",
-        "Cloudwatch"
+       "Route53",
+        "CloudFront",
+        "WAF", 
+        "S3",
+        "ACM",
+        "Cloudwatch", 
     ]
     },
     
