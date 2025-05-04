@@ -176,7 +176,7 @@ const Portfolio = () => {
 
 
     {
-      title: "CloudStruct-A-Frontend-Infrastructure-with-AWS-CloudFront-and-S3",
+      title: "CloudStruct: A Frontend Infrastructure with AWS CloudFront and S3",
       description: "A complete serverless infrastructure solution for hosting frontend static web applications using AWS CloudFront and S3.",
       image: "/img/aws-architecture-diagram.png",
       services: [
