@@ -183,31 +183,6 @@ const Portfolio = () => {
       tier: "Backend Infrastructure"
     },
 
-
-    // {
-    //   title: "Artisan Tiling React + Vite Cloudfront",
-    //   description: "A modern, responsive website for Artisan Tiling, a professional tiling company based in Hamilton, New Zealand. Built with React and Vite, deployed on AWS using Terraform for infrastructure management, with automated CI/CD through GitHub Actions.",
-    //   image: "/img/frontend-artisan-tilings.png",
-    //   services: [
-    //     "Route53",
-    //     "CloudFront",
-    //     "WAF", 
-    //     "S3",
-    //     "ACM",
-    //     "IAM",
-    // ],
-    //   github: "https://github.com/CaringalML/Artisan-Tiling-React-JS-Cloudfront",
-    //   architecture: [
-    //     "Route53 DNS",
-    //     "CloudFront CDN",
-    //     "WAF Protection", 
-    //     "Origin Access Control",
-    //     "S3 Storage",
-    //     "ACM Certificate"
-    // ]
-    // },
-
-
     {
       title: "CloudStruct: A Frontend Infrastructure with AWS CloudFront and S3",
       description: "A complete serverless infrastructure solution for hosting frontend static web applications using AWS CloudFront and S3.",
