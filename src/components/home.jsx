@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network, FileCode, GitBranch, ZoomIn } from 'lucide-react';
+import { Github, Mail, Phone, Award, ChevronRight, Code, Cloud, Database, Sun, Moon, Menu, X, Server, Network, FileCode, GitBranch, ZoomIn, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from "../components/ui/card";
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
@@ -92,6 +92,39 @@ const Portfolio = () => {
       icon: Network,
       description: "Designing resilient and cost-effective AWS solutions",
       color: "from-purple-400 to-purple-600"
+    }
+  ];
+
+  // Industry experience data - real client projects delivered in production
+  const industryExperience = [
+    {
+      title: "Nature's Spa NZ",
+      client: "Nature's Spa NZ, Hamilton Central",
+      description: "A full-stack business website for a day spa offering Swedish massage, aromatherapy, HIFU lifting, EMS body contouring and RF skin tightening. Built a React + Tailwind CSS frontend backed by a serverless booking/contact API, with the entire stack provisioned through Terraform and deployed via a GitHub Actions CI/CD pipeline.",
+      image: "https://naturesspanz.com/og-image.jpg",
+      services: [
+        "React",
+        "Tailwind CSS",
+        "Terraform",
+        "GitHub Actions",
+        "CloudFront",
+        "S3",
+        "IAM",
+        "ACM",
+        "Lambda (Python 3.12)",
+        "API Gateway",
+        "DynamoDB",
+        "Cloudflare DNS"
+      ],
+      liveUrl: "https://naturesspanz.com/",
+      architecture: [
+        "Cloudflare DNS",
+        "CloudFront CDN",
+        "S3 Frontend",
+        "API Gateway",
+        "Lambda (Python 3.12)",
+        "DynamoDB"
+      ]
     }
   ];
 
@@ -284,6 +317,9 @@ const Portfolio = () => {
               <a href="#services" className={activeSection === 'services' ? 'active' : ''}>
                 Services
               </a>
+              <a href="#industry-experience" className={activeSection === 'industry-experience' ? 'active' : ''}>
+                Industry Experience
+              </a>
               <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>
                 Projects
               </a>
@@ -320,6 +356,9 @@ const Portfolio = () => {
             </a>
             <a href="#services" className={activeSection === 'services' ? 'active' : ''}>
               Services
+            </a>
+            <a href="#industry-experience" className={activeSection === 'industry-experience' ? 'active' : ''}>
+              Industry Experience
             </a>
             <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>
               Projects
@@ -430,6 +469,61 @@ const Portfolio = () => {
       </div>
 
 
+{/* Industry Experience Section */}
+<div id="industry-experience" className="projects-section">
+  <div className="section-content">
+    <h2 className="section-title">Industry Experience</h2>
+    <div className="projects-grid">
+      {industryExperience.map((project, index) => (
+        <div
+          key={index}
+          className="project-card"
+        >
+          <div
+            className="project-image-container"
+            onClick={() => openImageModal(project.image)}
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+            <div className="image-overlay">
+              <ZoomIn className="zoom-icon" />
+            </div>
+          </div>
+          <div className="project-content">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+
+            <div className="project-services">
+              <h4 className="services-title">Tech Stack</h4>
+              <div className="services-tags">
+                {project.services.map((service, serviceIndex) => (
+                  <span key={serviceIndex} className="service-tag">
+                    {service}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <a
+              href={project.liveUrl}
+              className="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLink className="w-5 h-5" />
+              Visit Live Site
+              <ChevronRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 {/* Projects Section */}
 <div id="projects" className="projects-section">
   <div className="section-content">
@@ -490,24 +584,24 @@ const Portfolio = () => {
         <div className="gdrive-modal-overlay" onClick={closeImageModal}>
           <div className="gdrive-modal-header">
             <div className="gdrive-modal-title">
-              {projects.find(p => p.image === modalImage)?.title || 'Project Image'}
+              {[...industryExperience, ...projects].find(p => p.image === modalImage)?.title || 'Project Image'}
             </div>
             <button className="gdrive-close-button" onClick={closeImageModal}>
               <X className="close-icon" />
             </button>
           </div>
-          
+
           <div className="gdrive-modal-content" onClick={(e) => e.stopPropagation()}>
-            <img 
-              src={modalImage} 
-              alt="Enlarged project" 
-              className="gdrive-modal-image" 
+            <img
+              src={modalImage}
+              alt="Enlarged project"
+              className="gdrive-modal-image"
             />
           </div>
-          
+
           <div className="gdrive-modal-footer">
             <div className="gdrive-image-counter">
-              {projects.findIndex(p => p.image === modalImage) + 1} of {projects.length}
+              {[...industryExperience, ...projects].findIndex(p => p.image === modalImage) + 1} of {[...industryExperience, ...projects].length}
             </div>
           </div>
         </div>
